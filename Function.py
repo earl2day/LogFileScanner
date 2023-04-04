@@ -1,4 +1,7 @@
 #Function.py
+import tarfile
 
 def Untar(filePath):
-    print("Untar successful")
+    tar = tarfile.open(filePath)
+    tar.extractall()
+    tar.close()

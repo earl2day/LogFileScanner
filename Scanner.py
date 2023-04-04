@@ -1,4 +1,4 @@
-#Scanner.py
+#python3 Scanner.py
 #Can accept arguments: -h:help, -v:version, -r:report
 
 import sys
@@ -19,7 +19,7 @@ elif sys.argv[1] == "-h":
     """)
 elif sys.argv[1] == "-r":
     #call scan function
-    Untar("xxxx")
+    Untar("/usr/local/NCRSystemLog_2022-09-05T1658+0800.tar.gz")
 else:
     print("Incorrect option selected")
 
